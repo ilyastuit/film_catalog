@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FilmCatalog">
         <activity android:name=".activities.SecondActivity"
-            android:theme="@style/AppTheme.BlueStatusBar">
+            android:theme="@style/Theme.FilmCatalog">
         </activity>
         <activity
             android:name=".activities.MainActivity"
