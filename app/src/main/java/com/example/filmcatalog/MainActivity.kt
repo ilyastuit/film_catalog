@@ -11,17 +11,17 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         Timber.i("onStart Called")
+
+        setContentView(R.layout.activity_main)
 
         val textView: TextView = findViewById(R.id.hello_world_activity)
 
-        textView.setOnClickListener { implictIntend() }
+        textView.setOnClickListener { implicitIntend() }
 
-        setContentView(R.layout.activity_main)
     }
 
-    private fun implictIntend() {
+    private fun implicitIntend() {
         val address = Uri.parse("http://developer.android.com")
         val openLinkIntent = Intent(Intent.ACTION_VIEW, address)
 
