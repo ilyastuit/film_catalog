@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.filmcatalog.databinding.ActivitySecondBinding
 import com.example.filmcatalog.entities.TestData
-import kotlinx.android.synthetic.main.activity_second.view.*
 
 class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +16,7 @@ class SecondActivity : AppCompatActivity() {
 
         val data = intent.getParcelableExtra<TestData>(SecondActivity.DATA)
 
-        view.second_activity_textview.text = "These values were passed from previous screen: transmittedString: ${data?.transmittedString}, transmittedInt: ${data?.transmittedInt}, transmittedBoolean: ${data?.transmittedBoolean}"
+        binding.secondActivityTextview.text = "These values were passed from previous screen: transmittedString: ${data?.transmittedString}, transmittedInt: ${data?.transmittedInt}, transmittedBoolean: ${data?.transmittedBoolean}"
     }
 
     companion object {
