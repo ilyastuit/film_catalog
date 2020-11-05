@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Film catalog</string>
+    <string name="main_hello">Hello World!</string>
+    <string name="second_hello">Second Activity!</string>
 </resources>
