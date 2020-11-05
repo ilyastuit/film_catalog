@@ -1,18 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".activities.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/main_login_text"
+        android:layout_width="331dp"
+        android:layout_height="76dp"
+        android:hint="@string/main_login"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="212dp"
+        android:importantForAutofill="no" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/main_password_text"
+        android:layout_width="331dp"
+        android:layout_height="76dp"
+        android:hint="@string/main_password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="322dp"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/main_login_button"
+        android:layout_width="213dp"
+        android:layout_height="70dp"
+        android:text="@string/main_login_btn"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="416dp" />
+
+</LinearLayout>
