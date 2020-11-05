@@ -6,7 +6,6 @@ import android.os.Bundle
 import com.example.filmcatalog.databinding.ActivityMainBinding
 import com.example.filmcatalog.entities.TestData
 import kotlinx.android.synthetic.main.activity_main.view.*
-import kotlinx.android.synthetic.main.activity_second.view.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
