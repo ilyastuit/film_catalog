@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun moveToNextScreen() {
-        intent = Intent(this, SecondActivity::class.java)
+        val intent = Intent(this, SecondActivity::class.java)
         val student: Student = Student("Ilyas", 22)
         intent.putExtra(SecondActivity.STUDENT, student)
 
