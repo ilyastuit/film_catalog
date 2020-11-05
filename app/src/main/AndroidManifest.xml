@@ -9,8 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FilmCatalog">
-        <activity android:name=".activities.SecondActivity"></activity>
-        <activity android:name=".activities.MainActivity">
+        <activity android:name=".activities.SecondActivity"
+            android:theme="@style/AppTheme.BlueStatusBar">
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:theme="@style/AppTheme.Acent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
