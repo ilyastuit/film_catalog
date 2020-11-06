@@ -3,13 +3,9 @@ package com.example.filmcatalog.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
 import android.widget.Toast
 import com.example.filmcatalog.databinding.ActivityMainBinding
 import com.example.filmcatalog.entities.User
-import timber.log.Timber
-import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -49,6 +49,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     androidTestImplementation 'com.kaspersky.android-components:kaspresso:1.2.1-SNAPSHOT'
     androidTestImplementation 'com.kaspersky.android-components:kaspresso:1.2.0'
+    androidTestImplementation ("com.android.support.test.espresso:espresso-intents")
 }
 
 apply plugin: 'kotlin-android-extensions'
