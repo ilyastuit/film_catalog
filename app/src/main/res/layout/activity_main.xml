@@ -16,8 +16,7 @@
         android:hint="@string/main_login"
         android:inputType="text"
         tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="212dp"
-        android:importantForAutofill="no" />
+        tools:layout_editor_absoluteY="212dp"/>
 
     <EditText
         android:id="@+id/main_password_text"
@@ -26,8 +25,7 @@
         android:hint="@string/main_password"
         android:inputType="textPassword"
         tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="322dp"
-        android:importantForAutofill="no" />
+        tools:layout_editor_absoluteY="322dp"/>
 
     <Button
         android:id="@+id/main_login_button"
