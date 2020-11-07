@@ -1,5 +1,6 @@
 package com.example.filmcatalog
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -14,5 +15,13 @@ class MainActivity : AppCompatActivity() {
         third_text.text = "Third text."
         fourth_text.text = "Fourth text."
         fifth_text.text = "Fifth text."
+
+        first_text.setOnClickListener { moveToSecondActivity() }
+    }
+
+    private fun moveToSecondActivity() {
+        val intent = Intent(this, SecondActivity::class.java)
+
+        startActivity(intent)
     }
 }
