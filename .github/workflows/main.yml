@@ -22,7 +22,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Run ktlint
-        run: bash ./gradlew :app:ktlintCheck
+      - name: Run ktlint check
+        run: bash ./gradlew :app:ktlintDebugCheck
+
+      - name: Run ktlint check
+        run: bash ./gradlew ktlintCheck
+
       - name: Run lint
         run: bash ./gradlew :app:lintDebug
